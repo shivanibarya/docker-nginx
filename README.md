@@ -14,12 +14,14 @@ This project demonstrates:
 •	Docker Hub account (shivanibarya)
 •	GitHub account (shivanibarya)
 •	Basic knowledge of Linux commands
+
 3️⃣ Project Structure
 docker-nginx/
 ├─ Dockerfile
 ├─ index.html
 ├─ README.md
 └─ other project files (optional)
+
 4️⃣ index.html
 Create a file named index.html inside your project folder with the following content:
  
