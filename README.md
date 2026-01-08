@@ -11,6 +11,9 @@ This project demonstrates:
 
 2️⃣ Prerequisites
 •	Docker installed on your system
+<img width="975" height="549" alt="image" src="https://github.com/user-attachments/assets/3d5dfe9d-c6b6-4127-8245-b9fb2c97bf38" />
+
+
 •	Git installed
 •	Docker Hub account (shivanibarya)
 •	GitHub account (shivanibarya)
@@ -25,6 +28,9 @@ docker-nginx/
 
 4️⃣ index.html
 Create a file named index.html inside your project folder with the following content:
+<img width="975" height="549" alt="image" src="https://github.com/user-attachments/assets/b0cade1b-3c90-4c5e-9c1f-7a2247f1b92f" />
+
+
  
 <h1>Hello from Custom NGINX Docker</h1>
 <p>Welcome to Shivani's Docker NGINX Project!</p>
@@ -33,6 +39,9 @@ Create a file named index.html inside your project folder with the following con
 Create a file named Dockerfile inside your project folder with the following content:
 # Use latest official NGINX image
 FROM nginx:latest
+<img width="975" height="469" alt="image" src="https://github.com/user-attachments/assets/a1f9fd8c-cc79-4ec2-9c3c-9c61929ece85" />
+
+
  
 # Copy the custom index.html into the NGINX default web folder
 COPY index.html /usr/share/nginx/html/index.html
@@ -50,8 +59,12 @@ Step 2: Run Container (Detached Mode)
 docker run -d --name shivani-nginx-container -p 8080:80 shivani-nginx
 Check running container:
 docker ps
+<img width="975" height="391" alt="image" src="https://github.com/user-attachments/assets/6d3a20af-e4d8-4739-bbf3-e8cf336949e4" />
  
 Step 3: Access NGINX in Browser
+<img width="975" height="454" alt="image" src="https://github.com/user-attachments/assets/d6d4c753-0377-48e0-96f0-89b168cd212e" />
+
+
 •	Local: http://localhost:8080
 •	EC2/Public server: http://<EC2-public-IP>:8080
  
@@ -63,8 +76,13 @@ Step 5: Tag Docker Image for Docker Hub
 docker tag shivani-nginx shivanibarya/nginx-project:latest
 Step 6: Push Image to Docker Hub
 docker push shivanibarya/nginx-project:latest
+<img width="975" height="481" alt="image" src="https://github.com/user-attachments/assets/eb54f441-5136-4013-83ce-b23f55aaafc6" />
+
+
  
 Verify on Docker Hub repository.
+<img width="975" height="426" alt="image" src="https://github.com/user-attachments/assets/990866f2-bb4d-4243-914c-bf1fa5159261" />
+
  
 7️⃣ GitHub Version Control
 Step 1: Initialize Git
@@ -81,10 +99,12 @@ Step 5: Push to GitHub
 git branch -M main
 git push -u origin main
 Use GitHub Personal Access Token (PAT) as password.
- 
+ <img width="975" height="389" alt="image" src="https://github.com/user-attachments/assets/f7864a0b-84da-48a9-9248-4de71e198277" />
+
 8️⃣ Accessing NGINX in Browser
 1.	If running locally, open: http://localhost:8080
- 
+ <img width="975" height="441" alt="image" src="https://github.com/user-attachments/assets/244b0a21-6079-47f5-91f5-ed0b80583a75" />
+
 2.	If running on EC2/public server, open: http://<EC2-public-IP>:8080
 3.	Make sure port 8080 is allowed in your firewall or EC2 security group.
 4.	Refresh the page after restarting container to see updates.
