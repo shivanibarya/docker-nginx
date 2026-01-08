@@ -1,5 +1,5 @@
 # Docker NGINX Project
-                            NGINX Docker Project Documentation
+NGINX Docker Project Documentation
 1️⃣ Project Overview
 This project demonstrates:
 •	Running NGINX in Docker
