@@ -9,11 +9,11 @@ This project demonstrates:
 •	Accessing NGINX in a web browser
 2️⃣ Prerequisites
 •	Docker installed on your system
- 
 •	Git installed
 •	Docker Hub account (shivanibarya)
 •	GitHub account (shivanibarya)
 •	Basic knowledge of Linux commands
+
 3️⃣ Project Structure
 docker-nginx/
 │
@@ -26,6 +26,7 @@ Create a file named index.html inside your project folder with the following con
  
 <h1>Hello from Custom NGINX Docker</h1>
 <p>Welcome to Shivani's Docker NGINX Project!</p>
+
 5️⃣ Dockerfile
 Create a file named Dockerfile inside your project folder with the following content:
 # Use latest official NGINX image
@@ -37,6 +38,7 @@ COPY index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 # Start NGINX in foreground
 CMD ["nginx", "-g", "daemon off;"]
+
 6️⃣ Docker Steps
 Step 1: Build Docker Image
 docker build -t shivani-nginx .
@@ -84,6 +86,7 @@ Use GitHub Personal Access Token (PAT) as password.
 2.	If running on EC2/public server, open: http://<EC2-public-IP>:8080
 3.	Make sure port 8080 is allowed in your firewall or EC2 security group.
 4.	Refresh the page after restarting container to see updates.
+
 9️⃣ Updating Content
 •	Modify index.html or Dockerfile as needed.
 •	Rebuild image:
