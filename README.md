@@ -101,6 +101,7 @@ docker build -t shivani-nginx .
 5.	Test in browser
 6.	Push image to Docker Hub
 7.	Initialize Git → Commit → Push to GitHub
+
 11️⃣ References
 •	Docker Official Docs
 •	NGINX Official Docs
