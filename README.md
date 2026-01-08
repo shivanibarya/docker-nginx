@@ -8,6 +8,7 @@ This project demonstrates:
 •	Pushing the image to Docker Hub
 •	Version-controlling the project using GitHub
 •	Accessing NGINX in a web browser
+
 2️⃣ Prerequisites
 •	Docker installed on your system
 •	Git installed
