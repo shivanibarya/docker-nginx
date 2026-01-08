@@ -14,10 +14,8 @@ This project demonstrates:
 •	Docker Hub account (shivanibarya)
 •	GitHub account (shivanibarya)
 •	Basic knowledge of Linux commands
-
 3️⃣ Project Structure
 docker-nginx/
-│
 ├─ Dockerfile
 ├─ index.html
 ├─ README.md
